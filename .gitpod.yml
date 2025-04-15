@@ -2,7 +2,7 @@
 tasks:
   - name: aws-cli
     env:
-      AWS_CLI_AUTO_PROMT = on-partial
+      AWS_CLI_AUTO_PROMT: on-partial
     before:
      cd /workspace
      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -11,6 +11,3 @@ tasks:
      cd $THEIA_WORKSPACE_ROOT
 
 
-# gp env AWS_ACCESS_KEY_ID=AKIAXV3ET2DHYLCPTLAA
-# gp env AWS_SECRET_ACCESS_KEY=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
-# gp env AWS_DEFAULT_REGION=us-east-1
